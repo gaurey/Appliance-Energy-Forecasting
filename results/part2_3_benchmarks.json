@@ -1,0 +1,46 @@
+{
+  "target_variable": "Appliances (Wh consumed per hour, hourly-resampled)",
+  "forecast_horizon_hours": 24,
+  "train_rows": 2954,
+  "test_rows": 336,
+  "test_period_days": 14,
+  "evaluation_metrics": [
+    "RMSE",
+    "MAE",
+    "MAPE",
+    "sMAPE"
+  ],
+  "benchmark_results_mean_over_origins": {
+    "Mean": {
+      "RMSE": 412.48905925009177,
+      "MAE": 312.1052696664671,
+      "MAPE": 54.223326769833,
+      "sMAPE": 47.06287877857354
+    },
+    "Naive": {
+      "RMSE": 588.8926476117014,
+      "MAE": 507.797619047619,
+      "MAPE": 107.35133914165638,
+      "sMAPE": 64.78982684784559
+    },
+    "Seasonal_Naive_24h": {
+      "RMSE": 471.4989398396236,
+      "MAE": 303.72023809523813,
+      "MAPE": 43.32704561740347,
+      "sMAPE": 37.37665990168653
+    },
+    "Seasonal_Naive_168h": {
+      "RMSE": 419.75358360779046,
+      "MAE": 266.7857142857143,
+      "MAPE": 37.5918819842875,
+      "sMAPE": 32.63167032600199
+    },
+    "Drift": {
+      "RMSE": 590.016496311156,
+      "MAE": 509.17215236870004,
+      "MAPE": 107.72353769239145,
+      "sMAPE": 64.88853225833263
+    }
+  },
+  "best_benchmark": "Mean"
+}

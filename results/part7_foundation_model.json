@@ -1,0 +1,12 @@
+{
+  "chronos_available": false,
+  "chronos_load_error": "OSError: /usr/local/lib/python3.12/dist-packages/torch/lib/libtorch_global_deps.so: cannot open shared object file: No such file or directory",
+  "model_used": "Holt-Winters Exponential Smoothing (documented substitute for Chronos)",
+  "rolling_origin_metrics": {
+    "RMSE": 434.5321713362575,
+    "MAE": 338.1986701584694,
+    "MAPE": 61.74694139964189,
+    "sMAPE": 54.432126093189574
+  },
+  "note": "Chronos requires downloading pretrained weights from huggingface.co; if that host is unreachable, or the local PyTorch/CUDA install is broken, this falls back to Holt-Winters exponential smoothing, clearly labelled as a substitute."
+}

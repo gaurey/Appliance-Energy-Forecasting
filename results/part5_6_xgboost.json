@@ -1,0 +1,78 @@
+{
+  "n_features": 23,
+  "feature_columns": [
+    "is_weekend",
+    "hour_sin",
+    "hour_cos",
+    "dow_sin",
+    "dow_cos",
+    "appl_lag24",
+    "appl_lag25",
+    "appl_lag48",
+    "appl_lag72",
+    "appl_lag168",
+    "appl_roll24_mean",
+    "appl_roll24_std",
+    "appl_roll168_mean",
+    "T_out_lag24",
+    "RH_out_lag24",
+    "Windspeed_lag24",
+    "Visibility_lag24",
+    "Tdewpoint_lag24",
+    "Press_mm_hg_lag24",
+    "T1_lag24",
+    "RH_1_lag24",
+    "T3_lag24",
+    "RH_3_lag24"
+  ],
+  "rolling_origin_overall_metrics": {
+    "RMSE": 404.5730507611919,
+    "MAE": 245.3862863268171,
+    "MAPE": 39.48676898189839,
+    "sMAPE": 33.10381232566089
+  },
+  "feature_group_ablation_rmse": {
+    "lags_only": 409.78078272098963,
+    "lags_plus_calendar": 384.9245492773647,
+    "lags_plus_rolling": 407.00635709792107,
+    "full_feature_set": 404.5730507611919
+  },
+  "feature_group_ablation_full": {
+    "lags_only": {
+      "RMSE": 409.78078272098963,
+      "MAE": 237.29387183416458,
+      "MAPE": 38.29831419418823,
+      "sMAPE": 32.12197374355071
+    },
+    "lags_plus_calendar": {
+      "RMSE": 384.9245492773647,
+      "MAE": 219.62362779889787,
+      "MAPE": 33.467893468286896,
+      "sMAPE": 29.17993479435027
+    },
+    "lags_plus_rolling": {
+      "RMSE": 407.00635709792107,
+      "MAE": 237.57795061383928,
+      "MAPE": 37.94470283696584,
+      "sMAPE": 32.36767946322433
+    },
+    "full_feature_set": {
+      "RMSE": 404.5730507611919,
+      "MAE": 245.3862863268171,
+      "MAPE": 39.48676898189839,
+      "sMAPE": 33.10381232566089
+    }
+  },
+  "top_10_features_by_importance": {
+    "appl_lag168": 0.08006362617015839,
+    "appl_lag24": 0.07003675401210785,
+    "hour_sin": 0.06576923280954361,
+    "hour_cos": 0.06401675939559937,
+    "dow_cos": 0.05496314540505409,
+    "dow_sin": 0.05192624405026436,
+    "appl_roll168_mean": 0.05074773356318474,
+    "Press_mm_hg_lag24": 0.045799050480127335,
+    "appl_roll24_mean": 0.04409842938184738,
+    "appl_lag48": 0.043636925518512726
+  }
+}

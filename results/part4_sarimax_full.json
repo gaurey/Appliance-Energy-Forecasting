@@ -1,0 +1,32 @@
+{
+  "order": [
+    1,
+    1,
+    6
+  ],
+  "seasonal_order": [
+    1,
+    1,
+    1,
+    24
+  ],
+  "exog": [
+    "T_out",
+    "RH_out",
+    "hour_sin",
+    "hour_cos"
+  ],
+  "metrics_24h": {
+    "RMSE": 224.36081174928512,
+    "MAE": 184.38864914878843
+  },
+  "residual_diagnostics": {
+    "ljung_box_stat": 36.54055999266815,
+    "ljung_box_pvalue": 0.048598775316099886,
+    "residual_mean": 4.9426407898834706,
+    "residual_std": 389.9578090272573
+  },
+  "aic": 42938.703196665294,
+  "bic": 43022.30806238562,
+  "converged": false
+}
